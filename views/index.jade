@@ -1,5 +1,13 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1= time
+  h1 Hantz's RESTful API's
+  h2 Time MicroService
+
+  p.red Example Usage 
+  code localhost:3000/June 11, 1977
+  br
+  code localhost:3000/234934982
+  p.red Expected Output is JSON
+  code {"unix": 234934982, "natural": June 11, 1977s}
