@@ -1,6 +1,11 @@
+
 body {
-  padding: 50px;
+  padding: 20px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#row{
+	
 }
 
 a {
@@ -9,4 +14,33 @@ a {
 
 .red {
 color: red;
+}
+
+h1, .glyphicon-time {
+	text-align: center;
+font-size: 40px;
+}
+
+.glyphicon-time{
+color: #3F4ABF;
+font-size: 36px;
+}
+
+h2{
+
+	font-size: 20px;
+}
+
+h4{
+	text-align: center;
+}
+
+p{
+
+	font-size: 18px;
+}
+
+.blue{
+	color: blue;
+}
 }

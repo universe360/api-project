@@ -1,13 +1,25 @@
-extends layout
-
-block content
-  h1= time
-  h1 Hantz's RESTful API's
-  h2 Time MicroService
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  body
+ .container
+ .row
+   .col-lg-12
+  h1 Timestamp API 
+  .glyphicon.glyphicon-time
+  h4 created by Hantz Pierre
+  .container.blue
+  h2 Overview
+  p Takes a date parameter in natural language (or as a unix timestamp) and returns JSON with the date in both natural language and unix timestamp form.
 
   p.red Example Usage 
-  code localhost:3000/June 11, 1977
+  code
+  code localhost:3000/December 21, 2012
   br
-  code localhost:3000/234934982
+  code localhost:3000/1356091200
+
   p.red Expected Output is JSON
-  code {"unix": 234934982, "natural": June 11, 1977s}
+  code {"unix": 1356091200, "natural": December 21, 2012}
